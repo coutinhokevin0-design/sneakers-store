@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Nike</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 <body>
 
     <header class="header">
 
 <div class="logo">
 NIKE
+</div>
+
+<div class="carrinho">
+
+    <h2>Seu Carrinho</h2>
+
+    <div id="carrinho-itens"></div>
+
 </div>
 
 <nav class="menu">
@@ -39,41 +47,44 @@ NIKE
             <img src="tn_barcelona.webp" alt="Tênis Nike TN Barcelona">
             <h3>Air Max Tn Barcelona</h3>
             <p class="preço">R$ 1.800,00</p>
-            <button class="comprar">Comprar</button>
+        <button onclick="abrirModal('Air Max Tn Barcelona',1800,'tn_barcelona.webp')">
+        Comprar
+        </button>
         </div>
+
         <div class="produto">
             <img src="tn_dusk.jpg" alt="Tênis Nike TN Dusk">
             <h3>Air Max Tn Dusk</h3>
             <p class="preço">R$ 1.100,00</p>
-            <button class="comprar">Comprar</button>
+            <button onclick="abrirModal('Air Max Tn Dusk',1100,'tn_dusk.jpg')">Comprar</button>
         </div>
 
         <div class="produto">
             <img src="tn_purple.jpg" alt="Tênis Nike TN Purple">
             <h3>Air Max Tn Purple</h3>
             <p class="preço">R$ 1.024,00</p>
-            <button class="comprar">Comprar</button>
+            <button onclick="abrirModal('Air Max Tn Purple',1024,'tn_purple.jpg')">Comprar</button>
         </div>
 
         <div class="produto">
             <img src="jordan 4 black cat.jpg" alt="Tênis Jordan 4 Black Cat">
             <h3>Jordan 4 Black Cat</h3>
             <p class="preço">R$ 2.800,00</p>
-            <button class="comprar">Comprar</button>
+            <button onclick="abrirModal('Jordan 4 Black Cat',2800,'jordan 4 black cat.jpg')">Comprar</button>
         </div>
 
         <div class="produto">
             <img src="jordan 4 pine green.webp" alt="Tênis Jordan 4 Pine Green">
             <h3>Jordan 4 Pine Green</h3>
             <p class="preço">R$ 2.300,00</p>
-            <button class="comprar">Comprar</button>
+            <button onclick="abrirModal('Jordan 4 Pine Green',2300,'jordan 4 pine green.webp')">Comprar</button>
         </div>
 
         <div class="produto">
             <img src="jordan 4 UNC.jpg" alt="Tênis Jordan 4 UNC">
             <h3>Jordan 4 UNC PE</h3>
             <p class="preço">R$ 1.900,00</p>
-            <button class="comprar">Comprar</button>
+            <button onclick="abrirModal('Jordan 4 UNC PE',1900,'jordan 4 UNC.jpg')">Comprar</button>
         </div>
     </section>
 
@@ -107,32 +118,36 @@ NIKE
         </div>
 
     </section>
-    
-    <div id="modal-tamanhos" class="modal">
-        <div class="modal-conteudo">
-            <span class="fechar">&times;</span>
-            <h2>Escolha o Tamanho</h2>
 
-            <div class="tamanhos">
-                <button>34</button>
-                <button>35</button>
-                <button>36</button>
-                <button>37</button>
-                <button>38</button>
-                <button>39</button>
-                <button>40</button>
-                <button>41</button>
-                <button>42</button>
-                <button>43</button>
-            </div>
+  <div id="modal-tamanho" class="modal">
+
+    <div class="modal-conteudo">
+
+        <span class="fechar" onclick="fecharModal()">×</span>
+
+        <h2>Escolha o Tamanho</h2>
+
+        <div class="tamanhos">
+
+            <button onclick="selecionarTamanho(34)">34</button>
+            <button onclick="selecionarTamanho(35)">35</button>
+            <button onclick="selecionarTamanho(36)">36</button>
+            <button onclick="selecionarTamanho(37)">37</button>
+            <button onclick="selecionarTamanho(38)">38</button>
+            <button onclick="selecionarTamanho(39)">39</button>
+            <button onclick="selecionarTamanho(40)">40</button>
+            <button onclick="selecionarTamanho(41)">41</button>
+            <button onclick="selecionarTamanho(42)">42</button>
+            <button onclick="selecionarTamanho(43)">43</button>
 
         </div>
 
     </div>
 
+</div>
+
     <script src="script.js"></script>
-</body>
-</html>
+    <script src="carrinho.js"></script>
 
 </body>
 </html>
