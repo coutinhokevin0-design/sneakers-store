@@ -1,0 +1,149 @@
+body{
+font-family: Arial;
+margin:0;
+background: black;
+}
+
+.logo{
+font-family: 'Anton', sans-serif;
+font-size:42px;
+letter-spacing:4px;
+color:rgb(0, 0, 0);
+}
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 40px;
+background:white;
+}
+
+.menu{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:35px;
+flex:1;
+}
+
+.menu a{
+text-decoration:none;
+color:black;
+font-size:16px;
+font-weight:500;
+}
+
+.menu a:hover{
+border-bottom:2px solid black;
+padding-bottom:4px;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+font-weight:500;
+margin-right:25px;
+font-size:16px;
+}
+
+.banner{
+text-align:center;
+padding:80px;
+background:#111;
+color:white;
+}
+
+.banner button{
+background:white;
+color:black;
+border:none;
+padding:12px 25px;
+border-radius: 10px;
+text-align: center;
+width: 280px;
+}
+
+.produtos{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 40px;
+max-width: 1100px;
+margin: 60px auto;
+}
+
+.produto{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+width:300px;
+}
+
+.produto img{
+width:250px;
+height:auto;
+}
+
+button{
+background:black;
+color:white;
+border:none;
+padding:12px 25px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#333;
+}
+
+.preco{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin: 8px 0 15px 0;
+}
+
+.curiosidades{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 80px;
+    padding-left: 80px;
+    max-width: 1200px;
+}
+
+.curiosidade-balao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgb(33, 32, 32);
+    color: rgb(253, 253, 253);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 900px;
+}
+
+.curiosidade-balao img{
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.texto-curiosidade{
+    flex: 1;
+}
+
+.texto-curiosidade h2 {
+    margin-bottom: 15px;
+}
+
+.texto-curiosidade p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+
