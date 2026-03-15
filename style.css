@@ -64,26 +64,37 @@ text-align: center;
 width: 280px;
 }
 
-.produtos{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 40px;
-max-width: 1100px;
-margin: 60px auto;
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  align-items: start;
+  gap: 30px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.produtos h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .produto{
-background:white;
-padding:20px;
-border-radius:10px;
-text-align:center;
-width:300px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
 }
 
 .produto img{
-width:250px;
-height:auto;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 button{
@@ -106,12 +117,12 @@ background:#333;
     margin: 8px 0 15px 0;
 }
 
-.curiosidades{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 80px;
-    padding-left: 80px;
-    max-width: 1200px;
+.curiosidades {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 0 80px;
+  max-width: 1200px;
 }
 
 .curiosidade-balao{
